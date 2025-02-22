@@ -1,0 +1,87 @@
+/* Estilo base */
+body {
+  background: linear-gradient(to bottom, #0B0D17, #121A2D);
+  color: #FFF;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Títulos con efecto neón más sutil */
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0 0 10px #FF00AA;
+}
+
+/* Contenedor de formularios */
+.form-add-money, .add-subscription {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 450px; 
+  margin: 20px auto;
+  box-shadow: 0 0 15px #FF00AA;
+}
+
+/* Estilo de los inputs */
+input, select {
+  width: 98%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #121A2D;
+  border: 2px solid #FF00AA;
+  color: #FFF;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* Efecto neón en hover */
+input:hover, select:hover {
+  box-shadow: 0 0 10px #FF00AA;
+}
+
+/* Botón con efecto neón */
+input[type="submit"] {
+  background: transparent;
+  color: #FF00AA;
+  border: 2px solid #FF00AA;
+  padding: 12px 24px;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 0 15px #FF00AA;
+  transform: scale(1.05);
+}
+
+/* Balance de presupuesto */
+.balance {
+  background: rgba(20, 20, 40, 0.9);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px; /* Reducido el ancho del balance */
+  margin: auto;
+  box-shadow: 0 0 15px #00FFFF;
+}
+
+/* Diferentes colores según el estado del balance */
+.balance h3:nth-child(1) { color: #FFD700; } /* Presupuesto */
+.balance h3:nth-child(2) { color: #00FF00; } /* Disponible */
+.balance h3:nth-child(3) { color: #FF4500; } /* Gastado */
+
+/* Encabezado */
+.header {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  text-shadow: 0 0 10px #FF00AA;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-add-money, .add-subscription, .balance {
+      max-width: 90%;
+  }
+}
